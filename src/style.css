@@ -1,0 +1,272 @@
+.sidebar {
+    width: 15vw;
+    height: 800px;
+
+    border: 1px solid rgba(234, 236, 240, 1);
+}
+
+.navbar {
+    width: 84vw;
+    height: 66px;
+    border: 1px solid rgba(234, 236, 240, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.base {
+    display: flex;
+}
+
+.logo {
+    margin-left: 18px;
+    margin-top: 24px;
+    width: 133px;
+    height: 41px;
+
+}
+
+.sections {
+    margin-left: 20px;
+    /* weight:600; */
+    margin-top: 37px;
+    font: inter;
+    size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    color: rgba(157, 159, 161, 1);
+
+
+}
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+    min-height: 100%;
+    background-color: #f0f2f5;
+}
+
+.card {
+    margin: 20px;
+    padding: 15px;
+
+    min-width: 140px;
+    max-width: 350px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+}
+
+.card2 {
+    margin: 20px 0 20px 20px;
+    padding: 30px;
+    width: 800px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+
+}
+
+.total {
+    margin: 0 auto 10px;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.total span {
+    color: #bebebe;
+    font-size: 12px;
+}
+
+.pie-chart {
+    position: relative;
+}
+
+.pie-chart svg {
+    display: block;
+    margin: 0 auto 10px;
+    transform: rotate(-90deg);
+}
+
+.pie-chart circle:not(:first-child) {
+    cursor: pointer;
+    transition: opacity linear 0.2s, stroke-width linear 0.2s, transform linear 0.2s;
+    transform-origin: center;
+}
+
+.pie-chart .temp-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #bebebe;
+    padding: 0;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    transition: padding 0.2s;
+}
+
+.pie-chart .has-value {
+    padding: 5px;
+}
+
+.items {
+    width: 18px;
+    height: 14px;
+    margin: 5px 10px 5px 0;
+    border-radius: 4px;
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.items-wrap {
+    display: flex;
+    align-items: center;
+    transition: opacity 0.1s;
+}
+
+.items-wrap:hover {
+    opacity: 0.8;
+}
+
+.amount {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.searchField {
+    width: 905px;
+
+}
+
+.dashboard {
+    display: flex;
+}
+
+.card1 {
+    margin: 16px 16px 0 20px;
+    padding: 20px;
+    width: -webkit-fill-available;
+    min-width: 140px;
+    max-width: 350px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+}
+
+.value1 {
+    font: inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(95, 105, 128, 1);
+
+}
+
+.value2 {
+    font: inter;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 40px;
+    color: rgba(40, 40, 40, 1);
+
+}
+.value3 {
+    font: inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(146, 146, 146, 1);
+
+}
+
+.value4 {
+    width: 80px;
+    height: 33px;
+    border-radius: 100px;
+    background-color: #DCFFF5;
+    color: rgba(32, 201, 151, 1);
+    margin-top: 23px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.das1 {
+    background-color: #F5F5F5;
+    height: 734px;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu.open {
+    display: block;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 28px auto auto;
+}
+
+.listitem {
+    color: rgba(95, 105, 128, 1);
+    font: inter;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 10px 2px;
+
+}
+
+.listitem:hover {
+    color: black;
+}
+
+.sidebarel {
+    color: rgba(95, 105, 128, 1);
+
+}
+.sidebarel2 {
+    color: black;
+    cursor: pointer;
+    width: 15px;
+    height: 15px
+}
+.sidebarel:hover {
+    color: black;
+
+}
+
+.sidebarel:active {
+    color: black;
+}
